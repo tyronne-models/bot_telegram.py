@@ -18,7 +18,7 @@ async def button_handler(update: Update, context: ContextTypes.DEFAULT_TYPE):
     await query.answer()
     
     if query.data == "vip":
-        mensaje_vip = "Hola si estas interesado en entrar a OnlySpainVIP🧁 ✨ \n\nDebes hacer una transferencia de 20€\nA este IBAN↘️\nBE35905594234737\n\nAl hacer la transferencia ✅\nEnvia el comprobante a @jesus_gil00"
+        mensaje_vip = "Hola si estas interesado en entrar a OnlySpainVIP🧁 ✨ \n\nPaga por Paypal 20€\nA este enlace↘️\nhttps://www.paypal.com/paypalme/OnlyspainES\n\nAl hacer el pago ✅\nEnvia el comprobante a @jesus_gil00"
         await query.edit_message_text(text=mensaje_vip)
         
     elif query.data == "amateur":
@@ -37,4 +37,5 @@ def main():
     application.run_polling()
 
 if __name__ == "__main__":
+
     main()
