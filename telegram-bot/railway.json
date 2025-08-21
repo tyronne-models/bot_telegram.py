@@ -1,11 +1,9 @@
 {
-  "$schema": "https://railway.app/railway.schema.json",
   "build": {
     "builder": "nixpacks",
     "buildCommand": "pip install -r requirements.txt"
   },
   "deploy": {
-    "startCommand": "python bot_simple.py",
-    "restartPolicyType": "ON_FAILURE"
+    "startCommand": "python bot_simple.py"
   }
 }
